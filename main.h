@@ -19,9 +19,7 @@ typedef struct checker
 
 /* putchar*/
 int _putchar(char c);
-{
-	return (write(1, &c, 1));
-}
+
 /*les void*/
 void print_char(va_list list);
 void print_string(va_list list);
