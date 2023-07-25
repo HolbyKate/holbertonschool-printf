@@ -13,17 +13,15 @@
 
 typedef struct checker
 {
-	char *type;
-	void (*function)(va_list);
+	char type;
+	int (*function)(va_list);
 } checker;
 
-/* putchar*/
+/* functions use on struct define in my_printf*/
 int _putchar(char c);
-
-/*les void*/
-void print_char(va_list list);
-void print_string(va_list list);
-void print_percent(va_list list);
-/*..*/
+int print_char(va_list list);
+int print_string(va_list list);
+int print_percent(va_list list);
+/* main function of printf*/
 int _printf(const char *format, ...);
 #endif
