@@ -24,13 +24,13 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			print_format(format[i + 1], list);
+			count += print_format(format[i + 1], list);
 			i++;
 		}
 		else
 		{
-			_putchar(format[i]);
 			count++;
+			_putchar(format[i]);
 		}
 	}
 	va_end(list);
