@@ -60,3 +60,37 @@ int print_percent(va_list __attribute__((unused)) list)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * print_format - Function to search the specificataeur
+ * @type: The type is the char to be check on the struct specifier
+ * @list: char from list
+ *
+ * Return: count of charactere printed
+ */
+int print_format(const char type, va_list list)
+{
+	int j = 0;
+	int count = 0;
+
+	checker specifier[] = {
+		{'c', print_char},
+		{'s', print_string},
+		{'%', print_percent},
+		{'\0', NULL}
+	};
+
+	while (specifier[j].type != '\0')
+	{
+		if (type == specifier[j].type)
+		{
+			count++;
+			return (specifier[j].function(list));
+		}
+		j++;
+	}
+	_putchar('%');
+	_putchar(type);
+	count += 2;
+	return (count);
+}
