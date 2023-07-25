@@ -39,7 +39,15 @@ int print_string(va_list list)
 	char *str = va_arg(list, char*);
 
 	if (str == NULL)
-		return (-1);
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		return (6);
+	}
 
 	while (str[i] != '\0')
 	{
