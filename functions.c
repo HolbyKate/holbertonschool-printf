@@ -70,35 +70,50 @@ int print_percent(va_list __attribute__((unused)) list)
 }
 
 /**
- * print_format - Function to search the specificataeur
- * @type: The type is the char to be check on the struct specifier
- * @list: char from list
+ * print_number - function that prints the number neg. or pos. with digit
+ * @list: list the value of the number
  *
- * Return: count of charactere printed
+ * Return: number of character
  */
-int print_format(const char type, va_list list)
+
+int print_number(va_list list)
 {
-	int j = 0;
+	long int number = va_arg(list, int);
+	long int absolute_number = 0;
+	long int temp_number = 0;
+	long int number_digit_position = 1;
 	int count = 0;
 
-	checker specifier[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'%', print_percent},
-		{'\0', NULL}
-	};
-
-	while (specifier[j].type != '\0')
+	if (number < 0) /* on check si le nmb tapé par l'utilisateur est négatif */
 	{
-		if (type == specifier[j].type)
-		{
-			count++;
-			return (specifier[j].function(list));
-		}
-		j++;
+		absolute_number = (number * -1); /* transform un nombre nég. en aboslue */
+		_putchar('-');
+		count++;
 	}
-	_putchar('%');
-	_putchar(type);
-	count += 2;
+	else /* si le nombre est positif */
+	{
+		absolute_number = number; /* on garde le nombre tel qu'il est */
+	}
+
+	temp_number = absolute_number;
+
+	/* tant que le nombre a plus d'un chiffre le while opère */
+	while (temp_number > 9)
+	{
+		/* le but est de lire le nbre en regressant de 1 à gauche each boucle */
+		temp_number = temp_number / 10;
+		number_digit_position = number_digit_position * 10;
+		/* permet de savoir combien de chiffre il a dans ce nombre */
+	}
+	/* tant que il y a plus d'un chiffre dans le nombre */
+	while (number_digit_position >= 1)
+	{
+		_putchar(((absolute_number / number_digit_position) % 10) + '0');
+		/* ex: première boucle: (5234 / 1000) % 10 = 5 + '0' -> putchar(5) */
+		/* dernière boucle: (5234 / 1) % 10 = 4 + '0' -> putchar (4) */
+		number_digit_position = number_digit_position / 10;
+		count++;
+	}
 	return (count);
 }
+
