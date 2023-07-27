@@ -65,6 +65,27 @@ Authorized functions and macros
 - va_copy (man 3 va_copy)
 - va_arg (man 3 va_arg)
 
+## 📂 Files description
+
+| main.h | contains the main structure and the function prototypes | 
+| -------- | -------- | 
+| functions.c    | contains print functions   | 
+| format.c   | to check the specifier character   | 
+| my_printf.c   | project    | 
+|man_3_printf | manual for printf functions
+| README.md | The README.md file
+| Sources | source images
+
+## 💾 Specifiers
+
+| symbol| meaning|
+| -------- | -------- | 
+| %%   | print a percent   | 
+| %c   | print a single character   | 
+| %s  | print a null-terminated string  | 
+|%i | print an an int number
+| %d | print a decimal number
+
 ## 🤷‍♂️ Project instructions
 
 [Tasks](https://intranet.hbtn.io/projects/2167)
