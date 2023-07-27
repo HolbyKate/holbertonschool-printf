@@ -71,7 +71,7 @@ Authorized functions and macros
 
 ## 📊 Process
         
-[Flowchart](https://i.postimg.cc/VNxxt75S/Colorful-Get-Things-Done-Flowchart-Infographic-Graph.png)
+<img src="https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/Colorful%20Get%20Things%20Done%20Flowchart%20Infographic%20Graph.png>
    
 ## 📌	Examples and testing
 ```js 
