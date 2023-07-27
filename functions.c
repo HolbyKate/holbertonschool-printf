@@ -84,36 +84,36 @@ int print_number(va_list list)
 	long int number_digit_position = 1;
 	int count = 0;
 
-	if (number < 0) /* on check si le nmb tapé par l'utilisateur est négatif */
+	if (number < 0) /* Check if number is negative */
 	{
-		absolute_number = (number * -1); /* transform un nombre nég. en aboslue */
+		absolute_number = (number * -1); /* transform the negative into positive */
 		_putchar('-');
 		count++;
 	}
-	else /* si le nombre est positif */
+	else /* if number is positive */
 	{
-		absolute_number = number; /* on garde le nombre tel qu'il est */
+		absolute_number = number; /* keep the number positive */
 	}
 
 	temp_number = absolute_number;
 
-	/* tant que le nombre a plus d'un chiffre le while opère */
+	/* while temp_number has more than one digit*/
 	while (temp_number > 9)
 	{
-		/* le but est de lire le nbre en regressant de 1 à gauche each boucle */
+		/* Goal is to read number left to right, to decrease by one every while */
 		temp_number = temp_number / 10;
 		number_digit_position = number_digit_position * 10;
-		/* permet de savoir combien de chiffre il a dans ce nombre */
+		/* Obtain the number of digit has */
 	}
-	/* tant que il y a plus d'un chiffre dans le nombre */
+	/* while he has one digit in the number */
 	while (number_digit_position >= 1)
 	{
 		_putchar(((absolute_number / number_digit_position) % 10) + '0');
-		/* ex: première boucle: (5234 / 1000) % 10 = 5 + '0' -> putchar(5) */
-		/* dernière boucle: (5234 / 1) % 10 = 4 + '0' -> putchar (4) */
+		/* ex: first loop: (5234 / 1000) % 10 = 5 + '0' -> putchar(5) */
+		/* last bloucle: (5234 / 1) % 10 = 4 + '0' -> putchar (4) */
 		number_digit_position = number_digit_position / 10;
 		count++;
 	}
+
 	return (count);
 }
-
