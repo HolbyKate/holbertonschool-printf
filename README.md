@@ -22,7 +22,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
        
 ## 🛠️ Tech Stack
 
-<img width="50" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
+<img width="50px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png">
         
         
 ## 🧐 Features   
