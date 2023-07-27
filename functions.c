@@ -113,6 +113,7 @@ int print_number(va_list list)
 		/* last bloucle: (5234 / 1) % 10 = 4 + '0' -> putchar (4) */
 		number_digit_position = number_digit_position / 10;
 		count++;
+	}
 
 	return (count);
 }
