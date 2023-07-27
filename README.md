@@ -1,5 +1,4 @@
- Hi Holberton 👋
-<h1 align="center"> C - printf </h1> <br>
+<h1 align="center"> Hi Holberton 👋 </h1> <br>
 <p align="center">
 
   
