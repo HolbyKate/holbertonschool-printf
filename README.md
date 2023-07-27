@@ -1,8 +1,10 @@
-# Hi Holberton 👋
+ Hi Holberton 👋
 <h1 align="center"> C - printf </h1> <br>
 <p align="center">
- 
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFprflAwM8&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">  </iframe></div><a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFprflAwM8&#x2F;watch?utm_content=DAFprflAwM8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
+
+  
+![https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/printf%20img.png?raw=true](https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/printf%20img.png?raw=true)
+           
 
 
 ## Introduction
@@ -70,8 +72,11 @@ Authorized functions and macros
 
 
 ## 📊 Process
-        
-<img src="https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/Colorful%20Get%20Things%20Done%20Flowchart%20Infographic%20Graph.png>
+
+
+
+![https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/Colorful%20Get%20Things%20Done%20Flowchart%20Infographic%20Graph.png?raw=true](https://github.com/HolbyKate/holbertonschool-printf/blob/main/Sources/Colorful%20Get%20Things%20Done%20Flowchart%20Infographic%20Graph.png?raw=true)    
+                
    
 ## 📌	Examples and testing
 ```js 
@@ -124,4 +129,3 @@ Thank you to all the helper peers for our kindness and professionalism 🙏
 - Github: https://github.com/HolbyKate
 #### Yoann Rivet
 - Github: https://github.com/SpStigma
-
